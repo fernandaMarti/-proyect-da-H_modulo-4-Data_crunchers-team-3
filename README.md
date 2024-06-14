@@ -24,7 +24,7 @@ Este proyecto nos permitirá desarrollar habilidades esenciales en ETL y visuali
 
 Un día, mientras disfrutábamos de una pizza en nuestra oficina 🍕, María Fernanda Marti Levalle tuvo una idea brillante 💡: "¿Por qué no hacemos que los datos sean tan irresistibles como esta pizza?" Y así nació nuestra filosofía: hacer que los datos sean deliciosos y fáciles de digerir.
 
-![Logo](https://your-logo-url.com/logo.png)
+![Logo](https://raw.githubusercontent.com/fernandaMarti/-proyect-da-H_modulo-4-Data_crunchers-team-3/main/Imagenes/3.webp)
 
 Nuestro equipo está compuesto por:
 
