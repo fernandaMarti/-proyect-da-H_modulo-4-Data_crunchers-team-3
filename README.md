@@ -1,7 +1,5 @@
 # Data Insights: ETL y Visualización Impactante en Tableau
 
-![Data Crunchers](https://your-logo-url.com/logo.png)
-
 ---
 
 ## Descripción del Proyecto
