@@ -36,7 +36,7 @@ Nuestro equipo está compuesto por:
   - [LinkedIn](https://www.linkedin.com/in/gloria-gonzalez-munoz)
 - **Mábel Martínez Rodríguez** - La gurú de la visualización 🎨
   - [LinkedIn](https://www.linkedin.com/in/mabel-martinez-rodriguez)
-- **Patricia Elena González Gruber** - La maga de los datos 🧙‍♀️
+- **Patricia González Gruber** - La maga de los datos 🧙‍♀️
   - [LinkedIn](https://www.linkedin.com/in/patricia-elena-gonzalez-gruber)
 
 ---
