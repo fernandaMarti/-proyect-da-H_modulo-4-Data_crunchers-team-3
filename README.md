@@ -4,7 +4,7 @@
 
 ## Descripción del Proyecto
 
-¡Bienvenidas al emocionante proyecto "Data Insights: ETL y Visualización Impactante en Tableau" en nuestro bootcamp de análisis de datos!
+¡Bienvenidas/os al emocionante proyecto "Data Insights: ETL y Visualización Impactante en Tableau" en nuestro bootcamp de análisis de datos!
 
 En este desafío, nos sumergiremos en el apasionante mundo del reporting de datos 📊, donde adquiriremos las habilidades clave para transformar datos crudos en información significativa y visualmente impactante.
 
