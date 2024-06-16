@@ -115,10 +115,6 @@ El hotel ha notado un aumento en el número de cancelaciones de reservas en los 
 
 ---
 
-¡Claro! Continuemos con la implementación en Tableau y las secciones finales:
-
----
-
 ## Implementación en Tableau
 
 1. **Cargar Datos:**
