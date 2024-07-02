@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto: Data Crunchers</title>
+    <link rel="icon" href="assets/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: black;
+            color: #fff;
+            padding-top: 10px;
+            min-height: 50px;
+            border-bottom: #77a1d3 3px solid;
+        }
+        header img {
+            float: left;
+            margin-right: 15px;
+            height: 40px; 
+            width: auto; 
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 10px 0 10px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+        header nav {
+            float: right;
+            margin-top: 5px;
+        }
+        #showcase {
+            min-height: 300px;
+            background: #333 url('./assets/banner.jpg') no-repeat 0 -300px;
+            text-align: center;
+            color: #fff;
+        }
+        #showcase h1 {
+            margin-top: 80px;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 16px;
+        }
+        section {
+            padding: 10px;
+        }
+        .dark {
+            padding: 10px;
+            background: #35424a;
+            color: #fff;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            padding: 10px;
+            margin-top: 10px;
+            color: white;
+            background-color: #333;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        a[download] {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+          }
+          
+          a[download]:hover {
+            background-color: black;
+          }
+
+        /* Estilos generales */
+        #contactanos {
+            margin-left: 120px;
+            padding: 20px 0;
+            background-color: #f8f8f8;
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        /* Información de contacto */
+        .contact-info {
+            flex-basis: 30%;
+        }
+        
+        .contact-info h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #333;
+            font-size: 20px;
+        }
+        
+        /* Formulario de contacto */
+        .contact-form {
+            flex-basis: 60%;
+        }
+        
+        .contact-form h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .contact-form textarea {
+            height: 150px;
+        }
+        
+        .contact-form button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .contact-form button:hover {
+            background-color: #35424a;
+        }
+        
+        /* Mapa */
+        .map {
+            flex-basis: 100%;
+            margin-top: 40px;
+        }
+        
+        .map h3 {
+           
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .map iframe {
+            width: 50%;
+            height: 200px;
+            border: 0;
+        }
+  
+
+          
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./assets/logo.jpg" alt="Logo">
+            <div id="branding">
+                <h1>Data Crunchers</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#Acercade">Quiénes somos</a></li>
+                    <li><a href="contactanos.html">Contáctanos</a></li>
+                    <li><a href="#resumen">Resumen</a></li>
+                    <li><a href="#datos">Datos</a></li>
+                    <li><a href="#objetivos">Objetivos</a></li>
+                    <li><a href="#planificacion">Planificación</a></li>
+                    <li><a href="#descarga">Descargas</a></li>
+                    
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            
+        </div>
+    </section>
+    <section id="Acercade" class="container">
+        <h2>Sobre Data Crunchers</h2>
+            <p> Data Crunchers nació en una pequeña oficina en la ciudad de Analytica 🏢, fundada por cinco apasionadas de los datos que compartían una visión: convertir números y estadísticas en historias fascinantes 📚. Nuestra misión es ayudar a las empresas a descubrir los secretos ocultos en sus datos y transformarlos en decisiones inteligentes y estratégicas 💡.</p>
+            
+        <h2>Nuestra historia</h2>
+            <p>Un día, mientras disfrutábamos de una pizza en nuestra oficina 🍕, Fernanda Marti tuvo una idea brillante 💡: "¿Por qué no hacemos que los datos sean tan irresistibles como esta pizza?" Y así nació nuestra filosofía: hacer que los datos sean deliciosos y fáciles de digerir.</p>
+        <h2> Nuestro equipo está compuesto por:</h2>
+
+            <p>Fernanda Marti - La detective de los patrones 🔍
+                
+                <a href="https://www.linkedin.com/in/fernanda-marti-69b884208/" target="_blank">
+                    <img src="./assets/in.png" alt="LinkedIn" width="24" height="24">
+                </a>
+                    </p>
+
+            <p>Diana García Martín - La narradora de historias con datos 📖
+                <a href="https://www.linkedin.com/in/diana-garc%C3%ADa-mart%C3%ADn-85651b48/" target="_blank">
+                <img src="./assets/in.png" alt="LinkedIn" width="24" height="24">
+                </a>
+                    </p>
+
+            <p>Gloria González Muñoz - La narradora de historias con datos 📖
+                <a href="http://www.linkedin.com/in/gloria-gonz%C3%A1lez-mu%C3%B1oz-105500107" target="_blank">
+                <img src="./assets/in.png" alt="LinkedIn" width="24" height="24">
+                    </a>
+                        </p>
+            <p>Mábel Martínez Rodríguez - La narradora de historias con datos 📖
+                <a href="http://www.linkedin.com/in/mabelmr" target="_blank">
+                <img src="./assets/in.png" alt="LinkedIn" width="24" height="24">
+                    </a>
+                        </p>
+            <p>Patricia González Gruber - La narradora de historias con datos 📖
+                <a href="http://www.linkedin.com/in/patricia-gonz%C3%A1lez-8776b42b7" target="_blank">
+                <img src="./assets/in.png" alt="LinkedIn" width="24" height="24">
+                    </a>
+                        </p>
+            
+    </section>
+   
+      
+    <section id="resumen" class="container">
+        <h2>Resumen</h2>
+        <p>¡Bienvenid@s al emocionante proyecto "Data Insights: ETL y Visualización Impactante en Tableau" en nuestro trabajo de análisis de datos!</p>
+        <p>En este desafío, nos sumergiremos en el apasionante mundo del reporting de datos, donde demostraremos las habilidades clave para transformar datos crudos en información significativa y visualmente impactante.</p>
+        <p>Comenzaremos explorando/limpiando un conjunto de datos proporcionado, identificando patrones y determinando las mejores prácticas para la limpieza y transformación de datos. A través de Pandas, abordaremos problemas comunes como datos faltantes o inconsistentes.</p>
+        <p>Además, nos adentraremos en el poderoso Tableau, donde crearemos visualizaciones interactivas y atractivas que contarán historias con datos.</p>
+        <p>Gracias a estas herramientas, podremos comunicar de manera efectiva y persuasiva los insights obtenidos durante el análisis y limpieza previo.</p>
+        <p>Al finalizar, presentaremos nuestros informes finales y visualizaciones, demostrando nuestra habilidad para comunicar hallazgos clave y conclusiones a través de datos bien presentados.</p>
+        <p>Este proyecto nos permitirá desarrollar habilidades esenciales en ETL y visualización, lo que supone una ventaja competitiva en el campo del análisis de datos y el reporting.</p>
+    </section>
+
+    <section id="datos" class="container">
+        <h2>Datos</h2>
+        <h3>Conjunto de datos de Finanzas</h3>
+        <p>Este conjunto de datos contiene información sobre reservas de hoteles. A continuación, tenemos una descripción de lo que nos podemos encontrar en el conjunto de datos:</p>
+        <div class="table-responsive">
+           
+            <table>
+                <tr>
+                    <th>Columna</th>
+                    <th>Descripción</th>
+                    <th>Tipo de dato</th>
+                    <th>Cambios realizados</th>
+                </tr>
+                <tr>
+                    <td>hotel</td>
+                    <td>Tipo de hotel</td>
+                    <td>Texto</td>
+                    <td>Ninguno</td>
+                </tr>
+                <tr>
+                    <td>is_canceled</td>
+                    <td>Indica si la reserva fue cancelada (True) o no (False)</td>
+                    <td>Booleano</td>
+                    <td>Ninguno</td>
+                </tr>
+                <tr>
+                    <td>lead_time</td>
+                    <td>Número de días entre la fecha de reserva y la fecha de llegada al hotel</td>
+                    <td>Entero</td>
+                    <td>Cambio de tipo float a entero</td>
+                </tr>
+                <tr>
+                    <td>arrival_date_year</td>
+                    <td>Año de llegada al hotel</td>
+                    <td>Entero</td>
+                    <td>Cambio de tipo float a entero</td>
+                </tr>
+                <tr>
+                    <td>arrival_date_month</td>
+                    <td>Mes de llegada al hotel</td>
+                    <td>Texto</td>
+                    <td>Ninguno</td>
+                </tr>
+                <tr>
+                    <td>arrival_date_week_number</td>
+                    <td>Número de la semana de llegada al hotel</td>
+                    <td>Entero</td>
+                    <td>Cambio de tipo float a entero</td>
+                </tr>
+                <tr>
+                    <td>arrival_date_day_of_month</td>
+                    <td>Día del mes de llegada al hotel</td>
+                    <td>Entero</td>
+                    <td>Reemplazo de los valores 1, 2 y 3 por los meses enero, febrero y marzo</td>
+                </tr>
+                <tr>
+                    <td>stays_in_weekend_nights</td>
+                    <td>Número de noches que el cliente se quedó durante el fin de semana</td>
+                    <td>Entero</td>
+                    <td>Cambio de tipo float a entero</td>
+                </tr>
+                <tr>
+                    <td>stays_in_week_nights</td>
+                    <td>Número de noches que el cliente se quedó durante la semana</td>
+                    <td>Entero</td>
+                    <td>Cambio de tipo float a entero</td>
+                </tr>
+                <tr>
+                    <td>adults</td>
+                    <td>Número de adultos que acompañaban al cliente en la reserva</td>
+                    <td>Entero</td>
+                    <td>reemplazo de valores nulos</td>
+                </tr>
+                <tr>
+                    <td>children</td>
+                    <td>Número de niños que acompañaban al cliente en la reserva</td>
+                    <td>Entero</td>
+                    <td>Reemplazo de valores nulos</td>
+                </tr>
+                <tr>
+                    <td>babies</td>
+                    <td>Número de bebés que acompañaban al cliente en la reserva</td>
+                    <td>Entero</td>
+                    <td>Reemplazo de valores nulos</td>
+                </tr>
+                <tr>
+                    <td>meal</td>
+                    <td>Tipo de comida incluida en la reserva (BB: Desayuno, HB: Media Pensión, FB: Pensión Completa)</td>
+                    <td>Texto</td>
+                    <td>reemplazo de valores nulos por undefined</td>
+                </tr>
+                <tr>
+                    <td>country</td>
+                    <td>País de origen del cliente</td>
+                    <td>Texto</td>
+                    <td>Ninguno</td>
+                </tr>
+                <tr>
+                    <td>market_segment</td>
+                    <td>Segmento de mercado al que pertenece la reserva</td>
+                    <td>Texto</td>
+                    <td>Reemplazo de valores nulos</td>
+                </tr>
+                <tr>
+                    <td>distribution_channel</td>
+                    <td>Canal de distribución utilizado para realizar la reserva</td>
+                    <td>Texto</td>
+                    <td>Reemplazo de valores nulos</td>
+                </tr>
+                <tr>
+                    <td>is_repeated_guest</td>
+                    <td>Indica si el cliente es un huésped repetido (1) o no (0)</td>
+                    <td>Booleano</td>
+                    <td>Cambio de tipo float a entero</td>
+                </tr>
+                <tr>
+                    <td>previous_cancellations</td>
+                    <td>Número de reservas previas canceladas por el cliente</td>
+                    <td>Entero</td>
+                    <td>Cambio de tipo float a entero</td>
+                </tr>
+                <tr>
+                    <td>previous_bookings_not_canceled</td>
+                    <td>Número de reservas previas no canceladas por el cliente</td>
+                    <td>Entero</td>
+                    <td>Cambio de tipo float a entero</td>
+                </tr>
+                <tr>
+                    <td>reserved_room_type</td>
+                    <td>Tipo de habitación reservada por el cliente</td>
+                    <td>Texto</td>
+                    <td>Ninguno</td>
+                </tr>
+                <tr>
+                    <td>assigned_room_type</td>
+                    <td>Tipo de habitación asignada al cliente (puede diferir del tipo reservado)</td>
+                    <td>Texto</td>
+                    <td>Ninguno</td>
+                </tr>
+                <tr>
+                    <td>booking_changes</td>
+                    <td>Número de cambios realizados en la reserva desde que fue hecha hasta el momento de check-in</td>
+                    <td>Entero</td>
+                    <td>Cambio de tipo float a entero</td>
+                </tr>
+                <tr>
+                    <td>deposit_type</td>
+                    <td>Indica si se realizó un depósito para garantizar la reserva</td>
+                    <td>Texto</td>
+                    <td>Ninguno</td>
+                </tr>
+                <tr>
+                    <td>agent</td>
+                    <td>ID del agente de viajes que realizó la reserva</td>
+                    <td>Texto</td>
+                    <td>Cambio de tipo float a entero</td>
+                </tr>
+                <tr>
+                    <td>company</td>
+                    <td>ID de la empresa que realizó la reserva</td>
+                    <td>Texto</td>
+                    <td>Columna eliminada</td>
+                </tr>
+                <tr>
+                    <td>days_in_waiting_list</td>
+                    <td>Número de días que la reserva estuvo en lista de espera antes de ser confirmada</td>
+                    <td>Entero</td>
+                    <td>Cambio de tipo float a entero</td>
+                </tr>
+                <tr>
+                    <td>customer_type</td>
+                    <td>Tipo de cliente (e.g., Transient, Contract)</td>
+                    <td>Texto</td>
+                    <td>Ninguno</td>
+                </tr>
+                <tr>
+                    <td>adr</td>
+                    <td>Tarifa diaria promedio para la reserva</td>
+                    <td>Decimal</td>
+                    <td>Cambio de tipo entero a float</td>
+                </tr>
+                <tr>
+                    <td>required_car_parking_spaces</td>
+                    <td>Número de espacios de estacionamiento requeridos por el cliente</td>
+                    <td>Entero</td>
+                    <td>Cambio de tipo float a entero</td>
+                </tr>
+                <tr>
+                    <td>total_of_special_requests</td>
+                    <td>Número total de solicitudes especiales hechas por el cliente (e.g., cama extra, cuna)</td>
+                    <td>Entero</td>
+                    <td>Cambio de tipo float a entero</td>
+                </tr>
+                <tr>
+                    <td>reservation_status</td>
+                    <td>Estado de la reserva (e.g., Check-Out, Canceled)</td>
+                    <td>Texto</td>
+                    <td>Ninguno</td>
+                </tr>
+                <tr>
+                    <td>reservation_status_date</td>
+                    <td>Fecha en la que el estado de la reserva cambió por última vez</td>
+                    <td>Fecha</td>
+                    <td>Ninguno</td>
+                </tr>
+                    </table>
+                </div>
+            </section>
+        
+            <section id="objetivos" class="container">
+                <h2>Objetivos</h2>
+                <ul>
+                    <li> Desarrollar habilidades esenciales en procesos ETL.</li> 
+                    <li> Afianzar los conocimientos de visualización mediante gráficas interactivas.</li>
+                    <li> Implementar Scrum como marco de referencia para el desarrollo del producto.</li>
+                    <li> Utilizar los valores de Agile como estrategias de equipo para la mejora continua.</li>
+                    <li> Responder a las preguntas planteadas a través de la herramienta Tableau.</li>
+                    <li> Realizar un análisis más profundo y detallado del conjunto de datos.</li>
+                                                         
+                </ul>
+                
+            </section>
+        
+            <section id="planificacion" class="container">
+                <h2>Planificación</h2>
+                <p>
+                    <ol>
+                        <h2>Sprints</h2>
+                        <li> 
+                        <p>Para llevar a cabo este proyecto, hemos trabajado en dos sprints, siguiendo los principios ágiles.</p>
+                        <p>De esta forma, cada primera parte del día del sprint la hemos dedicado a la planificación; mientras que el resto del tiempo lo hemos destinado a comentar, tanto el progreso realizado hasta el momento, como a los objetivos aún por alcanzar.</p>
+                        <p>También hemos llevado a cabo una breve retrospectiva para revisar los acuerdos de trabajo establecidos al inicio del proyecto y agregar cualquier otro feedback que puediera mejorar nuestro proceso.</p></li>
+                        <li>Criterios de Aceptación
+                           <p> - Establecer un repositorio en GitHub accesible para todo el equipo.</p>
+                           <p> - Desarrollar un dashboard que presente los resultados del análisis.</p>
+                           <p> - Asegurar que todo el código del proyecto esté en el repositorio de GitHub.</p></li>
+                        
+                        <li>Historias de Usuario 
+                            <p>Hemos utilizado las siguientes historias de usuario para gestionar el proyecto:</p>
+                            <p>Selección de datos=> Elegir aquellos datos significativos para el análisis.</p>
+                            <p>Preparación de datos=> Limpiar y preparar el conjunto de los datos para el reporte.</p>
+                            <p>Creación de dashboards=> Desarrollar dashboards en Tableau para presentar los resultados del análisis.</p></li></ol>
+                </p>
+            </section>
+        
+            <section id="descarga" class="container">
+                <h2>Entrega y presentación</h2>
+                <p><a href="Hotel Bali Resolucíon Max.twbx" download="nombre_del_archivo.twbx">
+                    Descargar Hotel Bali Resolucíon Max.twbx
+                  </a>
+                  </p>
+            </section>
+                            
+            <footer>
+                <p>Data Crunchers & Co| 2024</p>
+            </footer>
+        </body>
+        </html>
+
+
